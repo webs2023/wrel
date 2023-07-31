@@ -16,13 +16,18 @@ function siguientePagina(e){
 
    window.scrollTo(0,0);
 
+   if(numeroPagina>5){
+      numeroPagina=2;
+      historia5.style.display="none";
+      historia1.style.display="";
+     }
 
-   if ( document.getElementById("container-texto"+numeroPagina).style.display=="none"){
+   else if( document.getElementById("container-texto"+numeroPagina).style.display=="none"){
       ocultarHistorias();
       historia1.style.display="none";
       document.getElementById("container-texto"+numeroPagina).style.display="";
    }
-  
+ 
    
 }
 
