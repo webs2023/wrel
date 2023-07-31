@@ -17,7 +17,7 @@ function siguientePagina(e){
    window.scrollTo(0,0);
 
    if(numeroPagina>5){
-      numeroPagina=2;
+      numeroPagina=1;
       historia5.style.display="none";
       historia1.style.display="";
      }
